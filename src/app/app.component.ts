@@ -3,6 +3,7 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { dataSource } from '../datasource';
 
+
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
 
@@ -60,7 +61,7 @@ template: `
 })
 export class AppComponent {
 @ViewChild('spreadsheet')
-spreadsheetObj: SpreadsheetComponent;
+spreadsheetObj!: SpreadsheetComponent;
 
 @ViewChild('download')
 download!: ElementRef;
